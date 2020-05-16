@@ -12,11 +12,12 @@
 
 //Declarative
 pipeline {
-	agent any
+	agent { docker { image 'maven:3.63'}}
 	stages{ 
 		stage('Build') {
 			steps {
-				echo "Build"
+				echo "Build with Maven"
+				sh 'maven --version' 
 			}
 		}
 		stage("Test") {
