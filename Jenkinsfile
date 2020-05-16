@@ -19,12 +19,13 @@ pipeline {
 				echo "Build"
 			}
 		}
-		stage("Test"){
+		stage("Test") {
 			steps {
 				echo "Test"
 			}
 		}
-		stage {
+
+		stage('Integration Test') {
 			steps {
 				echo "Integration Test"
 			}
