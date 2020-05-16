@@ -12,7 +12,7 @@
 
 //Declarative
 pipeline {
-	agent { docker { image 'maven:3.63'} }
+	agent { docker { image 'maven:3-alpine'} }
 	stages{ 
 		stage('Build') {
 			steps {
