@@ -1,4 +1,4 @@
-/* node {
+/node {
 	stage('Build') {
 		echo "Build"
 	}
@@ -8,9 +8,10 @@
 	stage('Integration Test'){
 		echo "Integration Test"
 	}
-}*/
+}
 
 //Declarative
+/*
 pipeline {
 	agent { docker { image 'maven:3-alpine'} }
 	stages{ 
@@ -45,4 +46,4 @@ pipeline {
 		}
 
 	}
-}
+}*/
